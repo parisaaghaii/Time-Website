@@ -1,21 +1,28 @@
-.App {
-  text-align: center;
-  background-color: rgb(216, 211, 211);
-  height: 100vh;
+.time-website {
+  position: absolute;
   width: 100vw;
-}
-
-.backgroundImage{
-  width: 90vw;
-  height: 40vh;
-}
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
+  background-color: rgb(228, 227, 227);
+  direction: rtl;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-position: top;
+}
+.time-website-boxs {
+  width: 60vw;
+  position: relative;
+  flex-direction: column;
+  background-color: rgb(250, 248, 248);
+  margin: auto;
+  display: flex;
+  z-index: 1000;
+  margin-right: 20%;
+  margin-bottom: 20px;
+  box-shadow: 0 1px 6px rgb(0 0 0 / 12%), 0 1px 4px rgb(0 0 0 / 24%);
+  border-radius: 7px;
+  float: right;
+  padding: 15px;
+  font-family: B-Nazanin;
+}
+.backgroundImage {
+  width: 100%;
 }

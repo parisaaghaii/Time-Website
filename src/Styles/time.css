@@ -1,0 +1,50 @@
+.time {
+  width: 100%;
+  height: 50vh;
+  justify-content: center;
+  display: flex;
+}
+.time-clock {
+  background-color: rgb(197, 247, 247);
+  width: 50%;
+  height: 50vh;
+}
+.time-ofogh {
+  position: relative;
+  align-items: center;
+  background-color: rgb(236, 175, 125);
+  width: 50%;
+  height: 50vh;
+  line-height: 1.8;
+}
+.time-ofogh-title {
+  position: relative;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.time-ofogh-title-text {
+  color: rgb(163, 27, 27);
+  border-bottom: 1px solid rgb(168, 168, 168);
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding-top: 15px;
+}
+.time-note {
+    display: flex;
+  background-color: darkgreen;
+  position: relative;
+  width: 100%;
+  height: 10vh;
+}
+.time-select{
+    background-color: sienna;
+    position: relative;
+    padding-right: 15px;
+    padding-left: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}

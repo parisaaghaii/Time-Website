@@ -1,0 +1,17 @@
+.selDesign {
+  background-color: rgb(250, 252, 255);
+  border-radius: 3px;
+  border: 1px solid rgb(175, 172, 172);
+  color: rgb(26, 24, 24);
+  outline: 0;
+  font-family: B-Nazanin;
+  font-size: 1.2rem;
+  padding-right: 9px;
+  max-width: 250px;
+  min-width: 180px;
+}
+.formDes {
+  position: relative;
+  margin-top: 30px;
+  padding: 0px 40px;
+}

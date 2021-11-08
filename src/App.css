@@ -6,8 +6,9 @@
   direction: rtl;
   flex-direction: column;
   background-position: top;
+  padding-bottom: 80px;
 }
-.time-website-boxs {
+.boxs {
   width: 60vw;
   position: relative;
   flex-direction: column;
@@ -22,6 +23,7 @@
   float: right;
   padding: 15px;
   font-family: B-Nazanin;
+  background-position: center center;
 }
 .backgroundImage {
   width: 100%;

@@ -12,7 +12,7 @@
 .time-ofogh {
   position: relative;
   align-items: center;
-  background-color: rgb(236, 175, 125);
+  /* background-color: rgb(236, 175, 125); */
   width: 50%;
   height: 50vh;
   line-height: 1.8;
@@ -25,7 +25,7 @@
   text-align: center;
 }
 .time-ofogh-title-text {
-  color: rgb(163, 27, 27);
+  color: rgb(214, 40, 40);
   border-bottom: 1px solid rgb(168, 168, 168);
   font-size: 1.8rem;
   font-weight: bold;
@@ -39,7 +39,7 @@
   height: 10vh;
 }
 .time-select{
-    background-color: sienna;
+    /* background-color: rgb(241, 243, 109); */
     position: relative;
     padding-right: 15px;
     padding-left: 15px;

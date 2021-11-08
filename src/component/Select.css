@@ -10,6 +10,11 @@
   max-width: 250px;
   min-width: 180px;
 }
+.selDesign:active {
+border: 1px solid rgb(175, 172, 172);
+transition: 0.5s;
+box-shadow: rgba(219, 62, 34, 0.925) 0px 2px 4px 2px, rgba(224, 38, 38, 0.925) 0px 2px 16px 0px;
+}
 .formDes {
   position: relative;
   margin-top: 30px;

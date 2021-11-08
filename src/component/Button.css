@@ -1,4 +1,4 @@
-.time-website-button {
+.button {
   position: relative;
   padding: 15px;
   color: rgb(255, 254, 254);
@@ -13,7 +13,7 @@
 font-size: 1rem;
 font-weight: bold;
 }
-.time-website-button:hover {
+.button:hover {
     background-color: #fcf6f4;
     color: black;
   transition: background-Color 0.5s;

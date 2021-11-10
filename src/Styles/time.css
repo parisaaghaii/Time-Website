@@ -1,3 +1,4 @@
+
 .time {
   width: 100%;
   height: 50vh;
@@ -5,16 +6,28 @@
   display: flex;
 }
 .time-clock {
-  background-color: rgb(197, 247, 247);
+  /* background-color: rgb(197, 247, 247); */
   width: 50%;
-  height: 50vh;
+  height: 32vh;
+}
+
+.time-degital {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  right: 0;
+  /* background-color: green; */
+  height: 9vh;
+  top: 210px;
 }
 .time-ofogh {
   position: relative;
   align-items: center;
   /* background-color: rgb(236, 175, 125); */
   width: 50%;
-  height: 50vh;
+  height: 32vh;
   line-height: 1.8;
 }
 .time-ofogh-title {
@@ -32,19 +45,66 @@
   padding-top: 15px;
 }
 .time-note {
-    display: flex;
-  background-color: darkgreen;
   position: relative;
+  display: flex;
+  /* background-color: darkgreen; */
   width: 100%;
   height: 10vh;
+  margin-top: -160px;
+
 }
-.time-select{
-    /* background-color: rgb(241, 243, 109); */
-    position: relative;
-    padding-right: 15px;
-    padding-left: 15px;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
+.time-note-text{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  text-align: start;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding-right: 15px;
+  line-height: 1.6;
+}
+.time-select {
+  /* background-color: rgb(241, 243, 109); */
+  position: relative;
+  padding-right: 15px;
+  padding-left: 15px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.sunIcon {
+  position: relative;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  padding-right: 50px;
+  padding-top: 20px;
+}
+.moonIcon {
+  position: relative;
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+  padding-right: 150px;
+  padding-top: 10px;
+}
+.time-azan {
+  position: relative;
+  display: flex;
+  justify-content: start;
+  padding-top: 10px;
+  padding-right: 10px;
+  flex-direction: column;
+  font-weight: 800;
+}
+
+@media only screen and (max-width: 600px) {
+.time-note-text{
+
+  font-size: 1rem;
+  color: brown;
+
+}
 }

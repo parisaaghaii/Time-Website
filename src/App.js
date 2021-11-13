@@ -3,10 +3,10 @@ import "./App.css";
 import "./Styles/timedate.css";
 import "./Styles/changedate.css";
 import "./Styles/tophead.css";
-import "./Styles/time.css"
+import "./Styles/time.css";
 import backgroundtop from "./assets/images/background-top.png";
 import sunrise from "./assets/images/sunrise.png";
-import comma from "./assets/images/comma.png"
+import comma from "./assets/images/comma.png";
 import sun from "./assets/images/sun.jpg";
 import sun1 from "./assets/images/sun1.png";
 import sunmoon from "./assets/images/sun-and-moon.png";
@@ -16,13 +16,14 @@ import Button from "./component/Button";
 import Select from "./component/Select";
 import Clock from "./component/Clock";
 import TimeDegital from "./component/TimeDegital";
-
+import JCalendar from "reactjs-persian-calendar";
 
 function App() {
   const [value, setValue] = useState("");
   return (
     <div className="time-website">
       <img src={backgroundtop} className="backgroundImage" />
+
       <div className="boxs ">
         <div className="time-top">
           <div className="time-top-inner">تاریخ امروز</div>
@@ -145,8 +146,89 @@ function App() {
           </div>
         </div>
         <div className="date">
-          edgbjlergjmeThis establishes the main-axis, thus defining the dir
-          <Button />
+          <div style={{ display: "flex", padding: "15px" }}>
+            <JCalendar
+              locale={"fa"}
+              color={"#D73333"}
+              size={40}
+              onClick={console.log}
+              itemRender={(key, item, children) => {
+                console.log(key, item);
+                if (
+                  key === "w0_d7" ||
+                  key === "w1_d7" ||
+                  key === "w2_d7" ||
+                  key === "w3_d7" ||
+                  key === "w4_d7"
+                ) {
+                  return <span style={{ color: "red" }}>{children}</span>;
+                }
+                return <span>{children}</span>;
+              }}
+            />
+          </div>
+          <div>
+            <div className="date-monasebatha">مناسبت های ماه آبان</div>
+            <div
+              style={{
+                display: "flex",
+                position: "relative",
+                flexDirection: "column",
+                clear: "both",
+              }}
+            >
+              <ul className="date-events">
+                <li className="date-events-text">
+                  <span className="date-events-days">۱ آبان </span> روز آمار و
+                  برنامه ریزی
+                </li>
+                <li className="date-events-text" style={{ color: "red" }}>
+                  <span className="date-events-days">۲ آبان </span>  میلاد
+                  رسول اکرم و امام جعفر صادق علیه السلام
+                </li>
+                <li className="date-events-text">
+                  <span className="date-events-days">۷ آبان </span> سالروز
+                  ورود کوروش بزرگ به بابل در سال 539 پیش از میلاد
+                </li>
+                <li className="date-events-text">
+                  <span className="date-events-days">۸ آبان </span>  روز
+                  نوجوان
+                </li>
+                <li className="date-events-text">
+                  <span className="date-events-days">۱۰ آبان </span>
+                    روز، جشن آبانگان  
+                </li>
+                <li className="date-events-text">
+                  <span className="date-events-days">۱۳ آبان </span>  روز دانش آموز</li>
+                <li className="date-events-text">
+                  <span className="date-events-days">۱۴ آبان </span>  روز فرهنگ عمومی</li>
+                <li className="date-events-text">
+                  <span className="date-events-days">۱۵ آبان </span>  جشن میانه پاییز</li>
+                <li className="date-events-text">
+                  <span className="date-events-days">۱۸ آبان </span>  روز ملی کیفیت</li>
+                <li className="date-events-text">
+                  <span className="date-events-days">۲۳ آبان </span>
+                    ولادت امام حسن عسکری علیه السلام
+                </li>
+                <li className="date-events-text">
+                  <span className="date-events-days">۲۳ آبان </span>  روز جهانی دیابت</li>
+                <li className="date-events-text">
+                  <span className="date-events-days">۲۴ آبان </span>
+                   روز کتاب و کتابخوانی
+                </li>
+                <li className="date-events-text">
+                  <span className="date-events-days">۲۵ آبان </span>
+                    وفات حضرت معصومه سلام الله علیها
+                </li>
+                <li className="date-events-text">
+                  <span className="date-events-days">۲۷ آبان </span> روز جهانی فلسفه</li>
+                <li className="date-events-text">
+                  <span className="date-events-days">۲۸ آبان </span>  روز جهانی آقایان</li>
+                <li className="date-events-text">
+                  <span className="date-events-days">۲۹ آبان </span> روز جهانی کودک</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
       <div className="boxs ">
@@ -155,6 +237,7 @@ function App() {
         optional wrapping) a single-direction layout concept. Think of flex
         items as primarily laying out either in horizontal rows or vertical
         columns.r
+        <Button />
       </div>
       <div className="boxs ">
         edgbjlergjmeThis establishes the main-axis, thus defining the direction

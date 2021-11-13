@@ -151,9 +151,19 @@ function App() {
               locale={"fa"}
               color={"#D73333"}
               size={40}
-              onClick={console.log}
+              onClick={(a)=>console.log(a)}
               itemRender={(key, item, children) => {
+
                 console.log(key, item);
+                
+                if (
+                  item === "02"
+                ) {
+                  return <span style={{ color: "red" }}>{children}</span>;
+                }
+                if (key === "today") {
+                  return  <Button />;
+                }
                 if (
                   key === "w0_d7" ||
                   key === "w1_d7" ||

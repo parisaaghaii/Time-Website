@@ -1,8 +1,8 @@
-.button {
+/* .button {
   position: relative;
   padding: 15px;
   color: rgb(255, 254, 254);
-  background-color: #d04514;
+  background-color: #D73333;
   border: 2px solid #b63607;
   border-radius: 5px;
   line-height: 0;
@@ -18,4 +18,47 @@ font-weight: bold;
     color: black;
   transition: background-Color 0.5s;
 }
- 
+  */
+
+.button{
+  display: block;
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: #333;
+  border: 2px solid rgb(184, 15, 15);
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  transition: all .35s;
+  border-radius: 5px;
+}
+
+.button span{
+  position: relative;
+  z-index: 2;
+}
+
+.button:after{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #D73333;
+  transition: all .35s;
+  border-radius: 3px;
+}
+
+.button:hover{
+  color: #fff;
+}
+
+.button:hover:after{
+  width: 100%;
+}
+

@@ -9,7 +9,7 @@
   padding-bottom: 80px;
 }
 .boxs {
-  width: 60vw;
+  width: 90%;
   position: relative;
   flex-direction: column;
   background-color: rgb(250, 248, 248);
@@ -26,4 +26,22 @@
 }
 .backgroundImage {
   width: 100%;
+}
+
+@media screen and (min-width: 400px) {
+  .boxs {
+    width: 390px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .boxs {
+    width: 790px;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .boxs {
+    width: 1090px;
+  }
 }
